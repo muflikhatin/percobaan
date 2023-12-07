@@ -49,7 +49,7 @@ scipy>=1.7.3
 semver==2.13.0
 smmap==5.0.0
 st-annotated-text==3.0.0
-streamlit==1.14.1
+streamlit>=3.10.0.0
 streamlit-camera-input-live==0.2.0
 streamlit-embedcode==0.1.2
 streamlit-extras==0.2.2
@@ -65,7 +65,7 @@ tornado==6.2
 typing_extensions==4.4.0
 tzdata==2022.6
 tzlocal==4.2
-tensorflow==2.6.0
+tensorflow~=3.7.4
 urllib3==1.26.12
 validators==0.20.0
 watchdog==2.1.9
