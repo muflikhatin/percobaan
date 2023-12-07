@@ -1,4 +1,4 @@
-altair==4.2.2
+
 attrs==23.1.0
 entrypoints==0.4
 click==7.1.2
