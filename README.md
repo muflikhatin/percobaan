@@ -1,2 +1,2 @@
 # percobaan
-tugas uts si
+tugas psd
