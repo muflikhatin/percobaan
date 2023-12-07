@@ -97,7 +97,9 @@ def main():
         selected_indices = selector.get_support(indices=True)
         
         # Get feature names
-        feature_names = np.array(vectorizer.get_feature_names_out())[selected_indices]
+        # feature_names = np.array(vectorizer.get_feature_names_out())[selected_indices]
+        feature_names = np.array(vectorizer.get_feature_names())[selected_indices]
+
         
         return selected_features, feature_names
     # Streamlit App
