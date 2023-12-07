@@ -65,6 +65,7 @@ tornado==6.2
 typing_extensions==4.4.0
 tzdata==2022.6
 tzlocal==4.2
+tensorflow==2.6.0
 urllib3==1.26.12
 validators==0.20.0
 watchdog==2.1.9
