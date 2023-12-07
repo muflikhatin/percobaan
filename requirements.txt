@@ -17,6 +17,6 @@ nltk==3.6.3
 pandas==1.3.3
 streamlit==1.3.0
 numpy==1.21.2
-indoNLP==0.0.9
+indoNLP==0.3.4
 scikit-learn==0.24.2
 keras==2.6.0
