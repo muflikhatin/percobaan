@@ -27,7 +27,7 @@ kiwisolver==1.4.4
 MarkupSafe==2.1.1
 matplotlib>=1.19
 more-itertools==9.0.0
-numpy~=1.19.2
+numpy>=1.19.3,<2.0.0  # Penyesuaian versi numpy
 nltk==3.6.5
 packaging==21.3
 pandas>=1.20.3
@@ -50,6 +50,8 @@ semver==2.13.0
 smmap==5.0.0
 st-annotated-text==3.0.0
 streamlit==1.29.0
+... (dan lain-lain)
+
 streamlit-camera-input-live==0.2.0
 streamlit-embedcode==0.1.2
 streamlit-extras==0.2.2
