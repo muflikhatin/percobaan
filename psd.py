@@ -170,6 +170,35 @@ def main():
     st.write("Recall:", recall)
     
     st.header("Tabel Uji Coba")
+            data = {
+            'Method': [
+                "Tanpa Oversampling",
+                "Tanpa Oversampling",
+                "Tanpa Oversampling",
+                "Meyamakan antara kelas minoritas dengan kelas mayoritas",
+                "Meyamakan antara kelas minoritas dengan kelas mayoritas",
+                "Meyamakan antara kelas minoritas dengan kelas mayoritas dan menggunakan K-fold",
+                "Dengan Oversampling Smote"
+            ],
+            'Accuracy': [
+                "92.01%",
+                "91.27%",
+                "92.50%",
+                "86.00%",
+                "0.92%",
+                "92.62%",
+                "0.86%"
+            ],
+            'Epoch': [20, 25, 3, 3, 50, 3, 20],
+            'Test Size': [0.2, 0.2, 0.1, 0.1, 0.2, 0.1, 0.2],
+            'Random State': [42, 42, 60, 60, 42, 60, 42]
+        }
+        
+        # Buat DataFrame
+        df = pd.DataFrame(data)
+        
+        # Tampilkan tabel di Streamlit
+        st.table(df)
     
 if __name__ == "__main__":
     main()
