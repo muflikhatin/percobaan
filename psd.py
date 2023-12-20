@@ -112,7 +112,8 @@ def main():
     if st.button("Preprocessing Data"):
         processed_data = preprocess_data_cached(df_teroris)
         st.success("Preprocessing data selesai.")
-        st.dataframe(processed_data)
+        st.dataframe(cleaned_tweet)
+        # st.dataframe(processed_data)
 
     st.header("Analisis Sentimen")
     sentiment_text = st.text_input("Masukkan teks untuk analisis sentimen:")
