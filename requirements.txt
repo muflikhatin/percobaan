@@ -72,4 +72,5 @@ watchdog
 zipp
 plotly
 plotly.express
+openpyxl
 
