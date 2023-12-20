@@ -81,7 +81,8 @@ def main():
     # Preprocess data
     @st.cache()
     def preprocess_data_cached(df):
-        return preprocess_data(df)
+        # return preprocess_data(df)
+        return df['cleaned_tweet']
     def select_features(data, labels, num_features=1000):
         vectorizer = TfidfVectorizer()
         features = vectorizer.fit_transform(data)
@@ -110,13 +111,16 @@ def main():
 
     st.header("Data Hasil Preprocessing")
     if st.button("Preprocessing Data"):
-        processed_data = preprocess_data_cached(df_teroris)
-        st.success("Preprocessing data selesai.")
+        cleaned_tweet = preprocess_data(df)
         st.dataframe(cleaned_tweet)
+    #     processed_data = preprocess_data_cached(df_teroris)
+    #     st.success("Preprocessing data selesai.")
+    #     st.dataframe(cleaned_tweet)
         # st.dataframe(processed_data)
 
     st.header("Analisis Sentimen")
     sentiment_text = st.text_input("Masukkan teks untuk analisis sentimen:")
+    
     if sentiment_text:
         sentiment_prediction = label_tweet(sentiment_text)
         sentiment_label = "Positif" if sentiment_prediction == 1 else "Negatif" if sentiment_prediction == 2 else "Netral"
