@@ -168,5 +168,8 @@ def main():
     st.write("Akurasi:", accuracy)
     st.write("Presisi:", precision)
     st.write("Recall:", recall)
+    
+    st.header("Tabel Uji Coba")
+    
 if __name__ == "__main__":
     main()
